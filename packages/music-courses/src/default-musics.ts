@@ -4,6 +4,6 @@ type MUSICS_COURSES = Record<number, any>;
 export const music_courses: MUSICS_COURSES = {
   0: {
     title: "111Twinkle Twinkle Little Star",
-    songUrl: "xxxxxxxxxxxxxxxx",
+    songUrl: "xxxxxxxxxxxxxxxx", // oss中歌曲存放地圳
   },
 };

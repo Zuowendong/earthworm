@@ -7,7 +7,7 @@ import { db } from "@earthworm/db";
 import { music as musicSchema } from "@earthworm/schema";
 import { music_courses } from "./default-musics";
 
-const musicLyrics = fs.readdirSync(path.resolve(__dirname, "./data"));
+const musicLyrics = fs.readdirSync(path.resolve(__dirname, "../data"));
 
 (async function () {
   for (const [index, lyricName] of musicLyrics.entries()) {
@@ -32,7 +32,7 @@ const musicLyrics = fs.readdirSync(path.resolve(__dirname, "./data"));
 })();
 
 function getMusicLyric(name: string) {
-  const lyricPath = path.resolve(__dirname, `./data/${name}`);
+  const lyricPath = path.resolve(__dirname, `../data/${name}`);
   const lyrics = fs.readFileSync(lyricPath, "utf-8");
   return lyrics;
 }
